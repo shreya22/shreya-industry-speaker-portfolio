@@ -1,7 +1,14 @@
 import type { NextConfig } from "next";
 
+const repoBasePath = "/shreya-industry-speaker-portfolio";
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export",
+  basePath: isProd ? repoBasePath : "",
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
