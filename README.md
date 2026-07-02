@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shreya Sahu — Personal Website
 
-## Getting Started
+Personal website positioning Shreya as an engineering leader, educator and speaker: guest lectures, workshops, mentoring, and conference talks.
 
-First, run the development server:
+Built with Next.js (App Router), Tailwind CSS, and shadcn/ui. Fully static — no backend or database required.
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Before you go live
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Two assets are wired into the site but not included in the repo — the page renders gracefully without them, but you should add the real files:
 
-## Learn More
+1. **Headshot** — save your photo as `public/images/headshot.jpg`. Until it exists, the hero section shows an "SS" monogram placeholder automatically.
+2. **Resume** — save your resume as `public/resume/ShreyaResume.pdf`. Until it exists, the "Download Resume" buttons show a "(coming soon)" label; once added, downloads just work.
 
-To learn more about Next.js, take a look at the following resources:
+No code changes are needed for either — both are detected automatically at build/request time.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Also worth reviewing before launch:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `src/lib/site-config.ts` — name, email, social links, all section copy (teaching topics, speaking topics, experience, community cards, invite formats).
+- Email address in `site-config.ts` is currently `hello@shreyasahu.com` — update to your real inbox.
+- `src/app/layout.tsx` — SEO metadata, including `siteConfig.url` (currently a placeholder domain) — update once you have a real domain, since it's used for canonical URLs and Open Graph tags.
+- The **Testimonials** section (`src/components/sections/testimonials.tsx`) currently shows three placeholder cards — replace with real quotes once you have them.
 
-## Deploy on Vercel
+## Tech stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Next.js](https://nextjs.org) — App Router, static rendering
+- [Tailwind CSS v4](https://tailwindcss.com)
+- [shadcn/ui](https://ui.shadcn.com) (Base UI primitives)
+- [next-themes](https://github.com/pacocoursey/next-themes) — light/dark mode
+- [Fraunces](https://fonts.google.com/specimen/Fraunces) (headings) + [Geist Sans](https://vercel.com/font) (body)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+Any static-friendly host works. The fastest options:
+
+**Vercel** (built by the makers of Next.js — zero config):
+```bash
+npx vercel
+```
+
+**Netlify**:
+```bash
+npm run build
+# then drag the .next output, or connect the GitHub repo in the Netlify dashboard
+```
+
+**Any static/Node host**: `npm run build && npm run start` serves it, or export and host the static output on any CDN.
+
+## Project structure
+
+```
+src/
+  app/               # App Router: layout, page, global styles
+  components/
+    sections/        # Hero, About, Teaching, Speaking, Community, Experience, Testimonials, Invite
+    ui/               # shadcn/ui primitives
+  lib/
+    site-config.ts   # All editable content lives here
+    files.ts         # Helper for detecting optional public assets
+public/
+  images/            # Drop headshot.jpg here
+  resume/            # Drop ShreyaResume.pdf here
+```

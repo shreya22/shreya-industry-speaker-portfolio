@@ -1,0 +1,77 @@
+import Image from "next/image";
+import { ArrowRight, Download } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/lib/site-config";
+import { hasPublicFile } from "@/lib/files";
+
+export function Hero() {
+  const hasHeadshot = hasPublicFile("images/headshot.jpg");
+  const hasResume = hasPublicFile("resume/ShreyaResume.pdf");
+
+  return (
+    <section id="top" className="relative overflow-hidden">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 -top-40 h-[32rem] bg-[radial-gradient(60%_60%_at_50%_0%,color-mix(in_oklch,var(--brand)_12%,transparent),transparent_70%)]"
+      />
+
+      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-16 px-6 pb-20 pt-20 sm:pt-28 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 lg:px-8 lg:pb-28 lg:pt-32">
+        <div className="max-w-2xl">
+          <p className="text-sm font-medium tracking-wide text-brand">
+            Tech Lead, Monzo &middot; Guest Lecturer &amp; Speaker
+          </p>
+
+          <h1 className="mt-5 text-balance font-serif text-4xl leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-[3.4rem]">
+            Building software is my profession. Teaching it is my passion.
+          </h1>
+
+          <p className="mt-6 text-pretty text-lg leading-relaxed text-muted-foreground">
+            I&apos;m a Tech Lead at Monzo with previous experience at Twitter,
+            Amazon and Microsoft. I enjoy helping students and early-career
+            engineers bridge the gap between computer science theory and
+            real-world software engineering through guest lectures, workshops
+            and mentoring.
+          </p>
+
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <Button size="lg" className="rounded-full px-7" render={<a href="#invite" />}>
+              Invite Me to Speak
+              <ArrowRight className="size-4" />
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="rounded-full px-7"
+              render={<a href={siteConfig.resumeHref} download />}
+            >
+              <Download className="size-4" />
+              Download Resume
+              {!hasResume && (
+                <span className="text-muted-foreground">(coming soon)</span>
+              )}
+            </Button>
+          </div>
+        </div>
+
+        <div className="mx-auto w-full max-w-sm lg:mx-0 lg:ml-auto">
+          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] border border-border/60 bg-secondary shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
+            {hasHeadshot ? (
+              <Image
+                src={siteConfig.headshotSrc}
+                alt={siteConfig.name}
+                fill
+                sizes="(min-width: 1024px) 24rem, 90vw"
+                className="object-cover"
+                priority
+              />
+            ) : (
+              <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(160deg,color-mix(in_oklch,var(--brand)_16%,transparent),transparent_65%)]">
+                <span className="font-serif text-6xl text-brand/70">SS</span>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
