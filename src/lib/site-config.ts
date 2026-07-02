@@ -97,19 +97,22 @@ export const speakingTopics = [
 
 export const writingEssays = [
   {
-    title: "Why Incentives Beat Intentions",
+    title: "Convenience Is Slowly Weakening Judgement",
     description:
-      "Systems produce whatever behaviour they reward, regardless of what anyone meant them to do.",
+      "As we outsource a good deal of our everyday tasks to convenience, what are we becoming in the process?",
+    href: "https://thelongerthought.substack.com/p/convenience-slowly-weakening-judgement",
   },
   {
-    title: "The Case for Second-Order Thinking",
+    title: "Good Ideas Waste More Time Than Bad Ones",
     description:
-      "Most decisions look fine at the first consequence. The interesting ones show up at the second.",
+      "It's a genuine blessing to have a mind stimulated by ideas. It's also true that good ideas take a lot more of my time than bad ones.",
+    href: "https://thelongerthought.substack.com/p/good-ideas-waste-more-time-than-bad",
   },
   {
-    title: "On Outsourcing Your Judgment",
+    title: "The Energy Highway",
     description:
-      "What we give up, quietly, every time we let a feed or an algorithm decide for us.",
+      "An exploration of how AI growth is interplaying with the energy infrastructure of the world.",
+    href: "https://thelongerthought.substack.com/p/the-energy-highway",
   },
 ] as const;
 

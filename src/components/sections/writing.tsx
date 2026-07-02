@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { LeafGraphic, ScribbleGraphic } from "@/components/decorative-graphic";
-import { siteConfig, writingEssays } from "@/lib/site-config";
+import { writingEssays } from "@/lib/site-config";
 
 export function Writing() {
   return (
@@ -34,7 +34,7 @@ export function Writing() {
           {writingEssays.map((essay) => (
             <a
               key={essay.title}
-              href={siteConfig.social.substack}
+              href={essay.href}
               target="_blank"
               rel="noreferrer noopener"
               className="group flex flex-col rounded-2xl border border-border/60 bg-background p-7 transition-colors hover:bg-secondary/40"
