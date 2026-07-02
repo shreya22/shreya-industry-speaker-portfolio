@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowRight, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { LeafGraphic, PenGraphic } from "@/components/decorative-graphic";
 import { siteConfig } from "@/lib/site-config";
 import { hasPublicFile } from "@/lib/files";
 
@@ -12,6 +13,18 @@ export function Hero() {
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 -top-40 h-[36rem] bg-[radial-gradient(55%_60%_at_20%_0%,color-mix(in_oklch,var(--brand)_16%,transparent),transparent_70%),radial-gradient(45%_50%_at_90%_10%,color-mix(in_oklch,var(--accent-warm)_18%,transparent),transparent_70%)]"
+      />
+      <LeafGraphic
+        aria-hidden
+        className="pointer-events-none absolute -left-6 top-8 hidden size-40 rotate-[-18deg] text-brand/[0.09] sm:block lg:size-56"
+      />
+      <PenGraphic
+        aria-hidden
+        className="pointer-events-none absolute right-[8%] top-4 hidden size-24 rotate-[24deg] text-accent-warm/[0.16] lg:block"
+      />
+      <LeafGraphic
+        aria-hidden
+        className="pointer-events-none absolute bottom-0 left-[38%] hidden size-24 rotate-[12deg] text-brand/[0.1] md:block"
       />
 
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-16 px-6 pb-20 pt-20 sm:pt-28 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 lg:px-8 lg:pb-28 lg:pt-32">

@@ -1,5 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { LeafGraphic } from "@/components/decorative-graphic";
 import { hasPublicFile } from "@/lib/files";
 
 const facts = [
@@ -12,8 +13,15 @@ export function About() {
   const hasAboutPhoto = hasPublicFile("images/about.jpg");
 
   return (
-    <section id="about" className="bg-mesh-b relative scroll-mt-24 py-24 sm:py-28">
-      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+    <section
+      id="about"
+      className="bg-mesh-b relative scroll-mt-24 overflow-hidden py-24 sm:py-28"
+    >
+      <LeafGraphic
+        aria-hidden
+        className="pointer-events-none absolute -bottom-10 right-[6%] hidden size-48 rotate-[22deg] text-brand/[0.08] lg:block"
+      />
+      <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[0.4fr_0.6fr] lg:gap-16">
           <div>
             <p className="text-sm font-medium tracking-wide text-brand">About</p>

@@ -35,3 +35,75 @@ export function DecorativeGraphic(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+/**
+ * Single line-art leaf, a soft nod to the site's green palette. Outline only,
+ * no fill, so it reads as a sketch rather than a sticker.
+ */
+export function LeafGraphic(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 100 140"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      {...props}
+    >
+      <path
+        d="M50 8C74 26 86 54 78 84C71 110 54 128 50 132C46 128 29 110 22 84C14 54 26 26 50 8Z"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M50 20V122"
+        stroke="currentColor"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+      />
+      <path
+        d="M50 48C43 52 36 56 30 56M50 76C42 80 34 83 27 83M50 100C43 104 37 107 31 108"
+        stroke="currentColor"
+        strokeWidth="1"
+        strokeLinecap="round"
+      />
+      <path
+        d="M50 48C57 52 64 56 70 56M50 76C58 80 66 83 73 83M50 100C57 104 63 107 69 108"
+        stroke="currentColor"
+        strokeWidth="1"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+/**
+ * A fountain pen rendered in a single continuous outline, a quiet reference
+ * to writing and lecturing rather than a literal "code" cliche.
+ */
+export function PenGraphic(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 140 140"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      {...props}
+    >
+      <path
+        d="M100 8L30 78L18 120L60 108L130 38C136 32 136 22 130 16L124 10C118 4 106 2 100 8Z"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        strokeLinejoin="round"
+      />
+      <path d="M88 20L118 50" stroke="currentColor" strokeWidth="1.2" />
+      <path d="M30 78L60 108" stroke="currentColor" strokeWidth="1.2" />
+      <path
+        d="M18 120L26 100L38 112L18 120Z"
+        stroke="currentColor"
+        strokeWidth="1.2"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}

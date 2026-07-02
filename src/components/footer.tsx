@@ -1,5 +1,6 @@
 import { Newspaper, Mail } from "lucide-react";
 import { LinkedinIcon, GithubIcon } from "@/components/icons";
+import { LeafGraphic } from "@/components/decorative-graphic";
 import { siteConfig } from "@/lib/site-config";
 
 const links = [
@@ -11,8 +12,12 @@ const links = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-border/60">
-      <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-14 lg:px-8">
+    <footer className="relative overflow-hidden border-t border-border/60">
+      <LeafGraphic
+        aria-hidden
+        className="pointer-events-none absolute -bottom-8 left-[4%] hidden size-28 rotate-[-8deg] text-brand/[0.08] sm:block"
+      />
+      <div className="relative mx-auto flex max-w-6xl flex-col gap-8 px-6 py-14 lg:px-8">
         <div className="flex flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
           <div>
             <p className="font-serif text-lg text-foreground">{siteConfig.name}</p>

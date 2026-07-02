@@ -1,15 +1,20 @@
 import { Mail, MapPin } from "lucide-react";
 import { LinkedinIcon } from "@/components/icons";
 import { Button } from "@/components/ui/button";
+import { PenGraphic } from "@/components/decorative-graphic";
 import { siteConfig, inviteFormats, inviteFormatsKinds } from "@/lib/site-config";
 
 export function Invite() {
   return (
     <section
       id="invite"
-      className="bg-mesh-b relative scroll-mt-24 border-t border-border/60 bg-secondary/40 py-24 sm:py-28"
+      className="bg-mesh-b relative scroll-mt-24 overflow-hidden border-t border-border/60 bg-secondary/40 py-24 sm:py-28"
     >
-      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+      <PenGraphic
+        aria-hidden
+        className="pointer-events-none absolute -right-6 top-10 hidden size-32 rotate-[-10deg] text-brand/[0.1] lg:block"
+      />
+      <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-[0.55fr_0.45fr] lg:gap-16">
           <div>
             <p className="text-sm font-medium tracking-wide text-brand">Invite Me</p>
