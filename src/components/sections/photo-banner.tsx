@@ -3,7 +3,7 @@ import { LeafGraphic, TreeGraphic } from "@/components/decorative-graphic";
 import { hasPublicFile } from "@/lib/files";
 
 export function PhotoBanner() {
-  const hasBannerPhoto = hasPublicFile("images/banner.jpg");
+  const hasBannerPhoto = hasPublicFile("images/banner1.jpg");
 
   return (
     <section className="relative overflow-hidden border-t border-border/60 py-16 sm:py-20">
@@ -18,9 +18,9 @@ export function PhotoBanner() {
       <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <PhotoPlaceholder
           hasImage={hasBannerPhoto}
-          src="/images/banner.jpg"
+          src="/images/banner1.jpg"
           alt="Shreya Sahu speaking at an event"
-          filenameHint="images/banner.jpg"
+          filenameHint="images/banner1.jpg"
           className="aspect-[21/9] w-full rounded-3xl border border-border/60"
           imageClassName="grayscale-[15%]"
         />
