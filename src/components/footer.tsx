@@ -1,6 +1,6 @@
 import { Newspaper, Mail } from "lucide-react";
 import { LinkedinIcon, GithubIcon } from "@/components/icons";
-import { LeafGraphic, PenGraphic } from "@/components/decorative-graphic";
+import { LeafGraphic, PenGraphic, TreeGraphic } from "@/components/decorative-graphic";
 import { siteConfig } from "@/lib/site-config";
 
 const links = [
@@ -20,6 +20,10 @@ export function Footer() {
       <PenGraphic
         aria-hidden
         className="pointer-events-none absolute -right-6 -top-8 hidden size-24 rotate-[18deg] text-accent-warm/[0.09] sm:block"
+      />
+      <TreeGraphic
+        aria-hidden
+        className="pointer-events-none absolute left-[42%] -bottom-10 hidden size-28 rotate-[-2deg] text-brand/[0.06] lg:block"
       />
       <div className="relative mx-auto flex max-w-6xl flex-col gap-8 px-6 py-14 lg:px-8">
         <div className="flex flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">

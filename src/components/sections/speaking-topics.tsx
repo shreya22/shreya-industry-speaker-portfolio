@@ -1,5 +1,5 @@
 import { speakingTopics } from "@/lib/site-config";
-import { LeafGraphic, PenGraphic } from "@/components/decorative-graphic";
+import { LeafGraphic, PenGraphic, TreeGraphic } from "@/components/decorative-graphic";
 
 export function SpeakingTopics() {
   return (
@@ -14,6 +14,14 @@ export function SpeakingTopics() {
       <LeafGraphic
         aria-hidden
         className="pointer-events-none absolute -left-8 bottom-4 hidden size-32 rotate-[-18deg] text-accent-warm/[0.09] lg:block"
+      />
+      <TreeGraphic
+        aria-hidden
+        className="pointer-events-none absolute right-[30%] -bottom-8 hidden size-28 rotate-[2deg] text-brand/[0.07] lg:block"
+      />
+      <LeafGraphic
+        aria-hidden
+        className="pointer-events-none absolute left-[46%] -top-6 hidden size-14 rotate-[-10deg] text-brand/[0.08] xl:block"
       />
       <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <div className="max-w-2xl">

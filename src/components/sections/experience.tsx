@@ -1,5 +1,5 @@
 import { experience } from "@/lib/site-config";
-import { TreeGraphic, LeafGraphic } from "@/components/decorative-graphic";
+import { TreeGraphic, LeafGraphic, PenGraphic, ScribbleGraphic } from "@/components/decorative-graphic";
 
 export function Experience() {
   return (
@@ -14,6 +14,18 @@ export function Experience() {
       <LeafGraphic
         aria-hidden
         className="pointer-events-none absolute -left-6 top-6 hidden size-28 rotate-[16deg] text-accent-warm/[0.09] lg:block"
+      />
+      <PenGraphic
+        aria-hidden
+        className="pointer-events-none absolute right-[34%] top-4 hidden size-14 rotate-[-16deg] text-accent-warm/[0.08] xl:block"
+      />
+      <LeafGraphic
+        aria-hidden
+        className="pointer-events-none absolute left-[42%] bottom-2 hidden size-16 rotate-[24deg] text-brand/[0.07] xl:block"
+      />
+      <ScribbleGraphic
+        aria-hidden
+        className="pointer-events-none absolute right-[8%] top-[8%] hidden w-32 rotate-[5deg] text-brand/[0.07] lg:block"
       />
       <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <div className="max-w-2xl">

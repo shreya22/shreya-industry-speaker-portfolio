@@ -5,7 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { DecorativeGraphic, LeafGraphic, PenGraphic } from "@/components/decorative-graphic";
+import { DecorativeGraphic, LeafGraphic, PenGraphic, TreeGraphic } from "@/components/decorative-graphic";
 import { teachingCards } from "@/lib/site-config";
 
 export function Teaching() {
@@ -25,6 +25,14 @@ export function Teaching() {
       <LeafGraphic
         aria-hidden
         className="pointer-events-none absolute bottom-[-2rem] right-[24%] hidden size-24 rotate-[10deg] text-brand/[0.09] lg:block"
+      />
+      <TreeGraphic
+        aria-hidden
+        className="pointer-events-none absolute -right-10 bottom-[-2rem] hidden size-36 rotate-[5deg] text-accent-warm/[0.08] md:block"
+      />
+      <LeafGraphic
+        aria-hidden
+        className="pointer-events-none absolute left-[38%] top-4 hidden size-14 rotate-[-20deg] text-accent-warm/[0.09] xl:block"
       />
       <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <div className="max-w-2xl">

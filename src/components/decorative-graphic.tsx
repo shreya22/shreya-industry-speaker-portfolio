@@ -37,6 +37,29 @@ export function DecorativeGraphic(props: SVGProps<SVGSVGElement>) {
 }
 
 /**
+ * A loose, hand-drawn scribble of connected curves, used as a lighter-weight
+ * line-art accent than DecorativeGraphic in tighter spaces.
+ */
+export function ScribbleGraphic(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 200 80"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      {...props}
+    >
+      <path
+        d="M4 60C24 20 40 20 56 44C72 68 88 68 100 40C112 12 128 12 144 36C160 60 176 60 196 24"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+/**
  * Single line-art leaf, a soft nod to the site's green palette. Outline only,
  * no fill, so it reads as a sketch rather than a sticker.
  */
