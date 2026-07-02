@@ -1,9 +1,21 @@
 import { speakingTopics } from "@/lib/site-config";
+import { LeafGraphic, PenGraphic } from "@/components/decorative-graphic";
 
 export function SpeakingTopics() {
   return (
-    <section id="speaking" className="bg-mesh-b relative scroll-mt-24 border-t border-border/60 py-24 sm:py-28">
-      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+    <section
+      id="speaking"
+      className="bg-mesh-b relative scroll-mt-24 overflow-hidden border-t border-border/60 py-24 sm:py-28"
+    >
+      <PenGraphic
+        aria-hidden
+        className="pointer-events-none absolute -right-8 -top-8 hidden size-36 rotate-[12deg] text-brand/[0.08] sm:block"
+      />
+      <LeafGraphic
+        aria-hidden
+        className="pointer-events-none absolute -left-8 bottom-4 hidden size-32 rotate-[-18deg] text-accent-warm/[0.09] lg:block"
+      />
+      <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-sm font-medium tracking-wide text-brand">Speaking Topics</p>
           <h2 className="mt-4 font-serif text-3xl leading-tight tracking-tight text-foreground sm:text-4xl">

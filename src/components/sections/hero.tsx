@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ArrowRight, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { LeafGraphic, PenGraphic } from "@/components/decorative-graphic";
+import { LeafGraphic, PenGraphic, TreeGraphic } from "@/components/decorative-graphic";
 import { siteConfig } from "@/lib/site-config";
 import { hasPublicFile } from "@/lib/files";
 
@@ -25,6 +25,18 @@ export function Hero() {
       <LeafGraphic
         aria-hidden
         className="pointer-events-none absolute bottom-0 left-[38%] hidden size-24 rotate-[12deg] text-brand/[0.1] md:block"
+      />
+      <TreeGraphic
+        aria-hidden
+        className="pointer-events-none absolute -right-8 bottom-[-2rem] hidden size-48 rotate-[-4deg] text-brand/[0.1] sm:block lg:size-64"
+      />
+      <LeafGraphic
+        aria-hidden
+        className="pointer-events-none absolute left-[16%] top-[46%] hidden size-16 rotate-[40deg] text-accent-warm/[0.12] lg:block"
+      />
+      <PenGraphic
+        aria-hidden
+        className="pointer-events-none absolute left-[52%] top-[6%] hidden size-16 rotate-[-30deg] text-brand/[0.08] xl:block"
       />
 
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-16 px-6 pb-20 pt-20 sm:pt-28 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 lg:px-8 lg:pb-28 lg:pt-32">

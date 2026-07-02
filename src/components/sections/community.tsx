@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
-import { DecorativeGraphic } from "@/components/decorative-graphic";
+import { DecorativeGraphic, TreeGraphic, LeafGraphic } from "@/components/decorative-graphic";
 import { communityCards } from "@/lib/site-config";
 
 export function Community() {
@@ -11,6 +11,14 @@ export function Community() {
       <DecorativeGraphic
         aria-hidden
         className="pointer-events-none absolute -bottom-20 -left-16 size-80 rotate-180 text-accent-warm/[0.14] lg:size-[26rem]"
+      />
+      <TreeGraphic
+        aria-hidden
+        className="pointer-events-none absolute -right-10 top-4 hidden size-40 rotate-[4deg] text-brand/[0.09] sm:block"
+      />
+      <LeafGraphic
+        aria-hidden
+        className="pointer-events-none absolute right-[16%] bottom-8 hidden size-20 rotate-[-20deg] text-accent-warm/[0.1] lg:block"
       />
       <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <div className="max-w-2xl">

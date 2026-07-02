@@ -1,9 +1,21 @@
 import { experience } from "@/lib/site-config";
+import { TreeGraphic, LeafGraphic } from "@/components/decorative-graphic";
 
 export function Experience() {
   return (
-    <section id="experience" className="bg-mesh-b relative scroll-mt-24 border-t border-border/60 py-24 sm:py-28">
-      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+    <section
+      id="experience"
+      className="bg-mesh-b relative scroll-mt-24 overflow-hidden border-t border-border/60 py-24 sm:py-28"
+    >
+      <TreeGraphic
+        aria-hidden
+        className="pointer-events-none absolute -right-10 -bottom-10 hidden size-48 rotate-[-3deg] text-brand/[0.08] sm:block"
+      />
+      <LeafGraphic
+        aria-hidden
+        className="pointer-events-none absolute -left-6 top-6 hidden size-28 rotate-[16deg] text-accent-warm/[0.09] lg:block"
+      />
+      <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-sm font-medium tracking-wide text-brand">Experience</p>
           <h2 className="mt-4 font-serif text-3xl leading-tight tracking-tight text-foreground sm:text-4xl">

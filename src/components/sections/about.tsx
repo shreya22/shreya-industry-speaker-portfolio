@@ -1,6 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import { PhotoPlaceholder } from "@/components/photo-placeholder";
-import { LeafGraphic } from "@/components/decorative-graphic";
+import { LeafGraphic, PenGraphic, TreeGraphic } from "@/components/decorative-graphic";
 import { hasPublicFile } from "@/lib/files";
 
 const facts = [
@@ -20,6 +20,18 @@ export function About() {
       <LeafGraphic
         aria-hidden
         className="pointer-events-none absolute -bottom-10 right-[6%] hidden size-48 rotate-[22deg] text-brand/[0.08] lg:block"
+      />
+      <TreeGraphic
+        aria-hidden
+        className="pointer-events-none absolute -left-10 -top-6 hidden size-44 rotate-[6deg] text-accent-warm/[0.1] md:block"
+      />
+      <PenGraphic
+        aria-hidden
+        className="pointer-events-none absolute right-[22%] top-10 hidden size-20 rotate-[16deg] text-brand/[0.09] lg:block"
+      />
+      <LeafGraphic
+        aria-hidden
+        className="pointer-events-none absolute bottom-[10%] left-[2%] hidden size-20 rotate-[-14deg] text-accent-warm/[0.1] sm:block"
       />
       <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[0.4fr_0.6fr] lg:gap-16">

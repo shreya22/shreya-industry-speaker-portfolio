@@ -107,3 +107,35 @@ export function PenGraphic(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+/**
+ * A single line-art tree, rounded canopy over a simple trunk. Kept loose and
+ * sketchy rather than a literal pine/clip-art shape, in keeping with the
+ * leaf and pen motifs.
+ */
+export function TreeGraphic(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 120 160"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      {...props}
+    >
+      <path
+        d="M60 10C82 10 98 28 98 48C98 60 92 68 84 72C90 78 94 88 94 98C94 116 78 128 60 128C42 128 26 116 26 98C26 88 30 78 36 72C28 68 22 60 22 48C22 28 38 10 60 10Z"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        strokeLinejoin="round"
+      />
+      <path d="M60 128V152" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+      <path d="M60 152L46 150M60 152L74 150" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+      <path
+        d="M60 40C60 60 60 90 60 110M60 60C52 66 44 70 38 70M60 60C68 66 76 70 82 70M60 86C51 92 42 95 34 95M60 86C69 92 78 95 86 95"
+        stroke="currentColor"
+        strokeWidth="1"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}

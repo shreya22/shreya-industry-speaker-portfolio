@@ -1,7 +1,7 @@
 import { Mail, MapPin } from "lucide-react";
 import { LinkedinIcon } from "@/components/icons";
 import { Button } from "@/components/ui/button";
-import { PenGraphic } from "@/components/decorative-graphic";
+import { PenGraphic, LeafGraphic, TreeGraphic } from "@/components/decorative-graphic";
 import { siteConfig, inviteFormats, inviteFormatsKinds } from "@/lib/site-config";
 
 export function Invite() {
@@ -13,6 +13,14 @@ export function Invite() {
       <PenGraphic
         aria-hidden
         className="pointer-events-none absolute -right-6 top-10 hidden size-32 rotate-[-10deg] text-brand/[0.1] lg:block"
+      />
+      <LeafGraphic
+        aria-hidden
+        className="pointer-events-none absolute -left-8 bottom-0 hidden size-40 rotate-[-16deg] text-accent-warm/[0.09] sm:block"
+      />
+      <TreeGraphic
+        aria-hidden
+        className="pointer-events-none absolute -bottom-10 right-[18%] hidden size-40 rotate-[3deg] text-brand/[0.08] lg:block"
       />
       <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-[0.55fr_0.45fr] lg:gap-16">
