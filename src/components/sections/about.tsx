@@ -1,4 +1,6 @@
 import { Separator } from "@/components/ui/separator";
+import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { hasPublicFile } from "@/lib/files";
 
 const facts = [
   "Tech Lead at Monzo",
@@ -7,8 +9,10 @@ const facts = [
 ];
 
 export function About() {
+  const hasAboutPhoto = hasPublicFile("images/about.jpg");
+
   return (
-    <section id="about" className="scroll-mt-24 py-24 sm:py-28">
+    <section id="about" className="bg-mesh-b relative scroll-mt-24 py-24 sm:py-28">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[0.4fr_0.6fr] lg:gap-16">
           <div>
@@ -16,6 +20,13 @@ export function About() {
             <h2 className="mt-4 font-serif text-3xl leading-tight tracking-tight text-foreground sm:text-4xl">
               An engineer who thinks in systems, and teaches the same way.
             </h2>
+            <PhotoPlaceholder
+              hasImage={hasAboutPhoto}
+              src="/images/about.jpg"
+              alt="Shreya Sahu"
+              filenameHint="images/about.jpg"
+              className="mt-10 hidden aspect-[4/5] w-full max-w-xs rounded-2xl border border-border/60 lg:flex"
+            />
           </div>
 
           <div className="max-w-2xl space-y-6 text-lg leading-relaxed text-muted-foreground">

@@ -5,12 +5,20 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { DecorativeGraphic } from "@/components/decorative-graphic";
 import { teachingCards } from "@/lib/site-config";
 
 export function Teaching() {
   return (
-    <section id="teaching" className="scroll-mt-24 border-t border-border/60 py-24 sm:py-28">
-      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+    <section
+      id="teaching"
+      className="bg-mesh-a relative scroll-mt-24 overflow-hidden border-t border-border/60 py-24 sm:py-28"
+    >
+      <DecorativeGraphic
+        aria-hidden
+        className="pointer-events-none absolute -right-16 -top-16 size-80 text-brand/[0.07] lg:size-[26rem]"
+      />
+      <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-sm font-medium tracking-wide text-brand">
             Teaching &amp; Mentoring

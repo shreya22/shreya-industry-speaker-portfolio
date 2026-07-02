@@ -1,10 +1,18 @@
 import { ArrowUpRight } from "lucide-react";
+import { DecorativeGraphic } from "@/components/decorative-graphic";
 import { communityCards } from "@/lib/site-config";
 
 export function Community() {
   return (
-    <section id="community" className="scroll-mt-24 border-t border-border/60 py-24 sm:py-28">
-      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+    <section
+      id="community"
+      className="bg-mesh-a relative scroll-mt-24 overflow-hidden border-t border-border/60 py-24 sm:py-28"
+    >
+      <DecorativeGraphic
+        aria-hidden
+        className="pointer-events-none absolute -bottom-20 -left-16 size-80 rotate-180 text-accent-warm/[0.14] lg:size-[26rem]"
+      />
+      <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-sm font-medium tracking-wide text-brand">
             Community &amp; Leadership

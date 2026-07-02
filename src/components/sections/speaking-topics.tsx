@@ -2,7 +2,7 @@ import { speakingTopics } from "@/lib/site-config";
 
 export function SpeakingTopics() {
   return (
-    <section id="speaking" className="scroll-mt-24 border-t border-border/60 py-24 sm:py-28">
+    <section id="speaking" className="bg-mesh-b relative scroll-mt-24 border-t border-border/60 py-24 sm:py-28">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-sm font-medium tracking-wide text-brand">Speaking Topics</p>

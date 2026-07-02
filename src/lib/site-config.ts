@@ -137,12 +137,6 @@ export const experience = [
   },
 ] as const;
 
-export const testimonials = [
-  { placeholder: true },
-  { placeholder: true },
-  { placeholder: true },
-] as const;
-
 export const inviteFormats = [
   "60 minutes",
   "90 minutes",

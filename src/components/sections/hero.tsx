@@ -11,7 +11,7 @@ export function Hero() {
     <section id="top" className="relative overflow-hidden">
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 -top-40 h-[32rem] bg-[radial-gradient(60%_60%_at_50%_0%,color-mix(in_oklch,var(--brand)_12%,transparent),transparent_70%)]"
+        className="pointer-events-none absolute inset-x-0 -top-40 h-[36rem] bg-[radial-gradient(55%_60%_at_20%_0%,color-mix(in_oklch,var(--brand)_16%,transparent),transparent_70%),radial-gradient(45%_50%_at_90%_10%,color-mix(in_oklch,var(--accent-warm)_18%,transparent),transparent_70%)]"
       />
 
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-16 px-6 pb-20 pt-20 sm:pt-28 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 lg:px-8 lg:pb-28 lg:pt-32">

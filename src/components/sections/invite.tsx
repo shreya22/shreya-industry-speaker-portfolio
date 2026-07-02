@@ -7,7 +7,7 @@ export function Invite() {
   return (
     <section
       id="invite"
-      className="scroll-mt-24 border-t border-border/60 bg-secondary/40 py-24 sm:py-28"
+      className="bg-mesh-b relative scroll-mt-24 border-t border-border/60 bg-secondary/40 py-24 sm:py-28"
     >
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-[0.55fr_0.45fr] lg:gap-16">
