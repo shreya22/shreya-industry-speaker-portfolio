@@ -30,7 +30,7 @@ export function Footer() {
           <div>
             <p className="font-serif text-lg text-foreground">{siteConfig.name}</p>
             <p className="mt-1 text-sm text-muted-foreground">
-              Tech Lead at Monzo. Guest lectures, workshops and talks.
+              Tech Lead at Monzo. Speaker, writer and occasional mentor.
             </p>
           </div>
 

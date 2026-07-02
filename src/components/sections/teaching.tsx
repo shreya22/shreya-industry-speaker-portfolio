@@ -6,12 +6,12 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { DecorativeGraphic, LeafGraphic, PenGraphic, TreeGraphic } from "@/components/decorative-graphic";
-import { teachingCards } from "@/lib/site-config";
+import { speakingFormatCards } from "@/lib/site-config";
 
 export function Teaching() {
   return (
     <section
-      id="teaching"
+      id="speaking-formats"
       className="bg-mesh-a relative scroll-mt-24 overflow-hidden border-t border-border/60 py-24 sm:py-28"
     >
       <DecorativeGraphic
@@ -37,15 +37,15 @@ export function Teaching() {
       <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-sm font-medium tracking-wide text-brand">
-            Teaching &amp; Mentoring
+            Speaking, Workshops &amp; Mentoring
           </p>
           <h2 className="mt-4 font-serif text-3xl leading-tight tracking-tight text-foreground sm:text-4xl">
-            Three ways I show up for students and engineers.
+            Three ways I show up for engineers and organisations.
           </h2>
         </div>
 
         <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
-          {teachingCards.map((card) => (
+          {speakingFormatCards.map((card) => (
             <Card key={card.title} className="border-border/60 shadow-none">
               <CardHeader>
                 <CardTitle className="font-serif text-xl font-normal text-foreground">

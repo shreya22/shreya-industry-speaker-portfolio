@@ -54,7 +54,7 @@ export function About() {
           <div>
             <p className="text-sm font-medium tracking-wide text-brand">About</p>
             <h2 className="mt-4 font-serif text-3xl leading-tight tracking-tight text-foreground sm:text-4xl">
-              An engineer who thinks in systems, and teaches the same way.
+              An engineer who thinks in systems, and explains them clearly.
             </h2>
             <PhotoPlaceholder
               hasImage={hasAboutPhoto}
@@ -74,22 +74,19 @@ export function About() {
               whether or not anyone happens to be watching.
             </p>
             <p>
-              That work taught me more about distributed systems, reliability
-              and plain engineering judgement than any lecture hall could
-              have. It also left me with a pretty clear picture of what&apos;s
-              missing between what students learn in a computer science
-              degree and what it actually takes to build and run software at
-              scale. Closing that gap is more or less what I&apos;m trying to
-              do when I guest lecture, run a workshop, or sit down to mentor
-              someone.
+              That work has shaped how I think about engineering leadership
+              just as much as it has shaped how I write code: distributed
+              systems, reliability and the kind of plain judgement that only
+              comes from living with your decisions in production. I&apos;ve
+              come to care as much about explaining that thinking clearly as
+              I do about the thinking itself.
             </p>
             <p>
               I did a dual B.Tech and M.Tech in Computer Science at IIIT
-              Gwalior, and I care about engineering leadership and education
-              about as much as I care about the systems themselves. The
-              engineers I admire most are usually the ones who can explain
-              their reasoning out loud, not just execute on it, and that&apos;s
-              the standard I try to hold myself to, at work and in the room.
+              Gwalior. Outside work I enjoy speaking, writing and mentoring
+              engineers. Whether it&apos;s a university lecture, a conference
+              talk or a Toastmasters speech, I&apos;m interested in making
+              complex ideas understandable.
             </p>
           </div>
         </div>

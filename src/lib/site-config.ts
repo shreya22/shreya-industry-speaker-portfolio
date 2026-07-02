@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Shreya Sahu",
-  title: "Shreya Sahu, Engineering Leader, Educator & Speaker",
+  title: "Shreya Sahu, Engineering Leader, Speaker & Writer",
   description:
-    "Shreya Sahu is a Tech Lead at Monzo, and before that she was an engineer at Twitter, Amazon and Microsoft. She gives guest lectures, workshops and talks on distributed systems, engineering leadership and AI engineering.",
+    "Shreya Sahu is a Tech Lead at Monzo, and before that she was an engineer at Twitter, Amazon and Microsoft. She speaks at universities, conferences and engineering communities on distributed systems, engineering leadership and AI engineering, and writes The Longer Thought.",
   url: "https://shreyasahu.com",
   email: "hello@shreyasahu.com",
   location: "London, UK",
@@ -17,26 +17,24 @@ export const siteConfig = {
 
 export const nav = [
   { label: "About", href: "#about" },
-  { label: "Teaching", href: "#teaching" },
   { label: "Speaking", href: "#speaking" },
+  { label: "Writing", href: "#writing" },
   { label: "Community", href: "#community" },
   { label: "Experience", href: "#experience" },
   { label: "Invite Me", href: "#invite" },
 ] as const;
 
-export const teachingCards = [
+export const speakingFormatCards = [
   {
-    title: "Guest Lectures",
+    title: "Speaking",
     description:
-      "One-off lectures for undergraduate and postgraduate students, tailored to the course and the room.",
+      "Talks across a range of formats and audiences, from a single guest lecture to a recurring conference circuit.",
     items: [
-      "System Design",
-      "Distributed Systems",
-      "Backend Engineering",
-      "Engineering Leadership",
-      "AI Engineering",
-      "Product Engineering",
-      "Building Software at Scale",
+      "Conference talks",
+      "Guest lectures at universities",
+      "Meetup and community talks",
+      "Panels and fireside chats",
+      "Internal company talks",
     ],
   },
   {
@@ -97,20 +95,30 @@ export const speakingTopics = [
   },
 ] as const;
 
+export const writingEssays = [
+  {
+    title: "Why Incentives Beat Intentions",
+    description:
+      "Systems produce whatever behaviour they reward, regardless of what anyone meant them to do.",
+  },
+  {
+    title: "The Case for Second-Order Thinking",
+    description:
+      "Most decisions look fine at the first consequence. The interesting ones show up at the second.",
+  },
+  {
+    title: "On Outsourcing Your Judgment",
+    description:
+      "What we give up, quietly, every time we let a feed or an algorithm decide for us.",
+  },
+] as const;
+
 export const communityCards = [
   {
     title: "Toastmasters",
     subtitle: "Member, Wharf Speakers & City of London",
     description:
-      "I'm a member of both Wharf Speakers Toastmasters and City of London Toastmasters, where I show up regularly to practise public speaking, storytelling and technical communication in front of a live, supportive room.",
-  },
-  {
-    title: "The Longer Thought",
-    subtitle: "Founder",
-    description:
-      "A publication dedicated to reclaiming independent judgment in an age that profits from outsourcing it. Through essays grounded in systems thinking, second-order thinking, incentives and other mental models, it teaches readers how to think more clearly rather than what to think.",
-    href: siteConfig.social.substack,
-    linkLabel: "Read The Longer Thought",
+      "I've been an active member of both Wharf Speakers Toastmasters and City of London Toastmasters. They've been instrumental in helping me become a clearer communicator and a more thoughtful speaker. Every speech is an opportunity to refine ideas, improve storytelling and connect better with an audience.",
   },
 ] as const;
 
@@ -145,11 +153,13 @@ export const inviteFormats = [
   "Full-day workshop",
 ] as const;
 
-export const inviteFormatsKinds = [
-  "Guest lectures",
-  "Workshops",
-  "Career talks",
-  "Conference talks",
-  "Engineering panels",
-  "Fireside chats",
+export const inviteAudiences = [
+  "Universities",
+  "Conferences",
+  "Engineering meetups",
+  "Internal company events",
+  "Leadership offsites",
+  "Bootcamps",
+  "Podcasts",
+  "Panels",
 ] as const;

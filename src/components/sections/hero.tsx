@@ -62,19 +62,19 @@ export function Hero() {
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-16 px-6 pb-20 pt-20 sm:pt-28 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 lg:px-8 lg:pb-28 lg:pt-32">
         <div className="max-w-2xl">
           <p className="text-sm font-medium tracking-wide text-brand">
-            Tech Lead, Monzo &middot; Guest Lecturer &amp; Speaker
+            Tech Lead, Monzo &middot; Engineering Leader &amp; Speaker
           </p>
 
           <h1 className="mt-5 text-balance font-serif text-4xl leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-[3.4rem]">
-            Building software is my profession. Teaching it is my passion.
+            Building software at scale. Writing and speaking about how it&apos;s really done.
           </h1>
 
           <p className="mt-6 text-pretty text-lg leading-relaxed text-muted-foreground">
-            I&apos;m a Tech Lead at Monzo with previous experience at Twitter,
-            Amazon and Microsoft. I enjoy helping students and early-career
-            engineers bridge the gap between computer science theory and
-            real-world software engineering through guest lectures, workshops
-            and mentoring.
+            I&apos;m a Tech Lead at Monzo, with previous experience at
+            Twitter, Amazon and Microsoft. Outside of my day job, I speak at
+            universities, conferences, meetups and engineering communities
+            about distributed systems, engineering leadership and the
+            realities of building software at scale.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">

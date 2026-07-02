@@ -5,6 +5,7 @@ import { About } from "@/components/sections/about";
 import { Teaching } from "@/components/sections/teaching";
 import { PhotoBanner } from "@/components/sections/photo-banner";
 import { SpeakingTopics } from "@/components/sections/speaking-topics";
+import { Writing } from "@/components/sections/writing";
 import { Community } from "@/components/sections/community";
 import { Experience } from "@/components/sections/experience";
 import { Invite } from "@/components/sections/invite";
@@ -19,6 +20,7 @@ export default function Home() {
         <Teaching />
         <PhotoBanner />
         <SpeakingTopics />
+        <Writing />
         <Community />
         <Experience />
         <Invite />

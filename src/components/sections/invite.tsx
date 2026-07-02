@@ -2,7 +2,7 @@ import { Mail, MapPin } from "lucide-react";
 import { LinkedinIcon } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import { PenGraphic, LeafGraphic, TreeGraphic, ScribbleGraphic } from "@/components/decorative-graphic";
-import { siteConfig, inviteFormats, inviteFormatsKinds } from "@/lib/site-config";
+import { siteConfig, inviteFormats, inviteAudiences } from "@/lib/site-config";
 
 export function Invite() {
   return (
@@ -37,25 +37,25 @@ export function Invite() {
       <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-[0.55fr_0.45fr] lg:gap-16">
           <div>
-            <p className="text-sm font-medium tracking-wide text-brand">Invite Me</p>
+            <p className="text-sm font-medium tracking-wide text-brand">Invite Me to Speak</p>
             <h2 className="mt-4 font-serif text-3xl leading-tight tracking-tight text-foreground sm:text-4xl">
               Looking for an industry speaker?
             </h2>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
-              I&apos;m available for guest lectures, workshops, career talks,
-              conference talks, engineering panels and fireside chats. In
-              person across London, or remotely, wherever you are.
+              I&apos;m available for conference talks, guest lectures,
+              workshops, panels and fireside chats. In person across London,
+              or remotely, wherever you are.
             </p>
 
             <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2">
               <div>
                 <h3 className="text-sm font-medium uppercase tracking-wider text-muted-foreground">
-                  Formats
+                  Audiences
                 </h3>
                 <ul className="mt-4 space-y-2">
-                  {inviteFormatsKinds.map((kind) => (
-                    <li key={kind} className="text-sm text-foreground/90">
-                      {kind}
+                  {inviteAudiences.map((audience) => (
+                    <li key={audience} className="text-sm text-foreground/90">
+                      {audience}
                     </li>
                   ))}
                 </ul>

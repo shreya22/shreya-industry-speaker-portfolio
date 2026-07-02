@@ -1,4 +1,3 @@
-import { ArrowUpRight } from "lucide-react";
 import { DecorativeGraphic, TreeGraphic, LeafGraphic, PenGraphic, ScribbleGraphic } from "@/components/decorative-graphic";
 import { communityCards } from "@/lib/site-config";
 
@@ -35,18 +34,18 @@ export function Community() {
       <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-sm font-medium tracking-wide text-brand">
-            Community &amp; Leadership
+            Speaking &amp; Community
           </p>
           <h2 className="mt-4 font-serif text-3xl leading-tight tracking-tight text-foreground sm:text-4xl">
             Practising the craft of communication outside of work, too.
           </h2>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="mt-14 grid grid-cols-1">
           {communityCards.map((card) => (
             <div
               key={card.title}
-              className="rounded-2xl border border-border/60 p-8"
+              className="max-w-2xl rounded-2xl border border-border/60 p-8"
             >
               <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
                 {card.subtitle}
@@ -57,17 +56,6 @@ export function Community() {
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
                 {card.description}
               </p>
-              {"href" in card && card.href && (
-                <a
-                  href={card.href}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-brand hover:underline"
-                >
-                  {card.linkLabel}
-                  <ArrowUpRight className="size-4" />
-                </a>
-              )}
             </div>
           ))}
         </div>

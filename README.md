@@ -1,6 +1,6 @@
 # Shreya Sahu — Personal Website
 
-Personal website positioning Shreya as an engineering leader, educator and speaker: guest lectures, workshops, mentoring, and conference talks.
+Personal website positioning Shreya as an engineering leader, speaker and writer: conference talks, guest lectures, workshops, mentoring, and essays.
 
 Built with Next.js (App Router), Tailwind CSS, and shadcn/ui. Fully static — no backend or database required.
 
@@ -19,14 +19,14 @@ A handful of image/document assets are wired into the site but not included in t
 
 1. **Headshot** — save your photo as `public/images/headshot.jpg`. Until it exists, the hero section shows an "SS" monogram placeholder automatically.
 2. **About photo** — save a candid photo as `public/images/about.jpg`. Until it exists, the About section shows a placeholder block automatically.
-3. **Banner photo** — save a wide photo (lecturing, on stage, at a whiteboard, etc.) as `public/images/banner.jpg`. Until it exists, the full-width banner between Teaching and Speaking shows a placeholder block automatically.
+3. **Banner photo** — save a wide photo (on stage, speaking at a conference, etc.) as `public/images/banner.jpg`. Until it exists, the full-width banner shows a placeholder block automatically.
 4. **Resume** — save your resume as `public/resume/ShreyaResume.pdf`. Until it exists, the "Download Resume" button links to a file that doesn't exist yet; once added, downloads just work.
 
 No code changes are needed for any of these — all are detected automatically at build/request time.
 
 Also worth reviewing before launch:
 
-- `src/lib/site-config.ts` — name, email, social links, all section copy (teaching topics, speaking topics, experience, community cards, invite formats).
+- `src/lib/site-config.ts` — name, email, social links, all section copy (speaking formats, speaking topics, writing essays, experience, community, invite audiences).
 - Email address in `site-config.ts` is currently `hello@shreyasahu.com` — update to your real inbox.
 - `src/app/layout.tsx` — SEO metadata, including `siteConfig.url` (currently a placeholder domain) — update once you have a real domain, since it's used for canonical URLs and Open Graph tags.
 
@@ -61,7 +61,7 @@ npm run build
 src/
   app/               # App Router: layout, page, global styles
   components/
-    sections/        # Hero, About, Teaching, Photo Banner, Speaking, Community, Experience, Invite
+    sections/        # Hero, About, Speaking Formats, Photo Banner, Speaking Topics, Writing, Community, Experience, Invite
     ui/               # shadcn/ui primitives
   lib/
     site-config.ts   # All editable content lives here
