@@ -2,7 +2,6 @@ import { Separator } from "@/components/ui/separator";
 import { PhotoPlaceholder } from "@/components/photo-placeholder";
 import { LeafGraphic, PenGraphic, TreeGraphic, ScribbleGraphic } from "@/components/decorative-graphic";
 import { hasPublicFile } from "@/lib/files";
-import { withBasePath } from "@/lib/base-path";
 
 const facts = [
   "Tech Lead at Monzo",
@@ -59,7 +58,7 @@ export function About() {
             </h2>
             <PhotoPlaceholder
               hasImage={hasAboutPhoto}
-              src={withBasePath("/images/about.jpg")}
+              src="/images/about.jpg"
               alt="Shreya Sahu"
               filenameHint="images/about.jpg"
               className="mt-10 hidden aspect-[4/5] w-full max-w-xs rounded-2xl border border-border/60 lg:flex"

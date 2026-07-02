@@ -1,5 +1,3 @@
-import { withBasePath } from "@/lib/base-path";
-
 export const siteConfig = {
   name: "Shreya Sahu",
   title: "Shreya Sahu, Engineering Leader, Speaker & Writer",
@@ -13,8 +11,8 @@ export const siteConfig = {
     github: "https://github.com/shreya22",
     substack: "https://thelongerthought.substack.com/",
   },
-  resumeHref: withBasePath("/resume/ShreyaResume.pdf"),
-  headshotSrc: withBasePath("/images/headshot.jpg"),
+  resumeHref: "/resume/ShreyaResume.pdf",
+  headshotSrc: "/images/headshot.jpg",
 } as const;
 
 export const nav = [

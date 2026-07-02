@@ -1,7 +1,6 @@
 import { PhotoPlaceholder } from "@/components/photo-placeholder";
 import { LeafGraphic, TreeGraphic } from "@/components/decorative-graphic";
 import { hasPublicFile } from "@/lib/files";
-import { withBasePath } from "@/lib/base-path";
 
 export function PhotoBanner() {
   const hasBannerPhoto = hasPublicFile("images/banner1.jpg");
@@ -19,7 +18,7 @@ export function PhotoBanner() {
       <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <PhotoPlaceholder
           hasImage={hasBannerPhoto}
-          src={withBasePath("/images/banner1.jpg")}
+          src="/images/banner1.jpg"
           alt="Shreya Sahu speaking at an event"
           filenameHint="images/banner1.jpg"
           className="aspect-[21/9] w-full rounded-3xl border border-border/60"
