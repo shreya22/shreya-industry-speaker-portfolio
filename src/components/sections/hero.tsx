@@ -6,7 +6,6 @@ import { hasPublicFile } from "@/lib/files";
 
 export function Hero() {
   const hasHeadshot = hasPublicFile("images/headshot.jpg");
-  const hasResume = hasPublicFile("resume/ShreyaResume.pdf");
 
   return (
     <section id="top" className="relative overflow-hidden">
@@ -46,9 +45,6 @@ export function Hero() {
             >
               <Download className="size-4" />
               Download Resume
-              {!hasResume && (
-                <span className="text-muted-foreground">(coming soon)</span>
-              )}
             </Button>
           </div>
         </div>

@@ -20,28 +20,29 @@ export function About() {
 
           <div className="max-w-2xl space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p>
-              I spend my days building the backend systems that Monzo runs
-              on, and the years before that were spent doing much the same at
-              Twitter, Amazon and Microsoft &mdash; writing, reviewing and
-              rethinking software that has to work for millions of people
-              whether or not anyone is watching.
+              Most of my week goes into the backend systems that Monzo runs
+              on. Before that it was much the same story at Twitter, Amazon
+              and Microsoft, writing, reviewing and occasionally arguing
+              about software that has to hold up for millions of people,
+              whether or not anyone happens to be watching.
             </p>
             <p>
               That work taught me more about distributed systems, reliability
-              and engineering judgement than any classroom could. It also
-              left me with a strong sense of what&apos;s missing between what
-              students learn in a computer science degree and what it
-              actually takes to build and operate software at scale &mdash;
-              which is the gap I try to close when I lecture, run workshops
-              or mentor engineers.
+              and plain engineering judgement than any lecture hall could
+              have. It also left me with a pretty clear picture of what&apos;s
+              missing between what students learn in a computer science
+              degree and what it actually takes to build and run software at
+              scale. Closing that gap is more or less what I&apos;m trying to
+              do when I guest lecture, run a workshop, or sit down to mentor
+              someone.
             </p>
             <p>
-              I hold a dual B.Tech and M.Tech in Computer Science from IIIT
+              I did a dual B.Tech and M.Tech in Computer Science at IIIT
               Gwalior, and I care about engineering leadership and education
-              as seriously as I care about the systems themselves. I think
-              the best engineers are the ones who can also explain their
-              reasoning clearly &mdash; and I try to model that, both at work
-              and in the room.
+              about as much as I care about the systems themselves. The
+              engineers I admire most are usually the ones who can explain
+              their reasoning out loud, not just execute on it, and that&apos;s
+              the standard I try to hold myself to, at work and in the room.
             </p>
           </div>
         </div>

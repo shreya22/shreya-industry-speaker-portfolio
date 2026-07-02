@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Shreya Sahu",
-  title: "Shreya Sahu — Engineering Leader, Educator & Speaker",
+  title: "Shreya Sahu, Engineering Leader, Educator & Speaker",
   description:
-    "Shreya Sahu is a Tech Lead at Monzo and former engineer at Twitter, Amazon and Microsoft. She gives guest lectures, workshops and talks on distributed systems, engineering leadership and AI engineering.",
+    "Shreya Sahu is a Tech Lead at Monzo, and before that she was an engineer at Twitter, Amazon and Microsoft. She gives guest lectures, workshops and talks on distributed systems, engineering leadership and AI engineering.",
   url: "https://shreyasahu.com",
   email: "hello@shreyasahu.com",
   location: "London, UK",
@@ -99,10 +99,10 @@ export const speakingTopics = [
 
 export const communityCards = [
   {
-    title: "Wharf Speakers Toastmasters",
-    subtitle: "Member, past year",
+    title: "Toastmasters",
+    subtitle: "Member, Wharf Speakers & City of London",
     description:
-      "Regularly practises public speaking, storytelling and technical communication in a live, supportive club setting.",
+      "I'm a member of both Wharf Speakers Toastmasters and City of London Toastmasters, where I show up regularly to practise public speaking, storytelling and technical communication in front of a live, supportive room.",
   },
   {
     title: "The Longer Thought",
@@ -132,8 +132,8 @@ export const experience = [
   },
   {
     company: "Microsoft",
-    role: "Software Engineering Intern",
-    focus: "Early foundations in large-scale production software.",
+    role: "Software Engineer",
+    focus: "Started my career here, cutting my teeth on large-scale production software.",
   },
 ] as const;
 
@@ -153,7 +153,6 @@ export const inviteFormats = [
 
 export const inviteFormatsKinds = [
   "Guest lectures",
-  "Visiting lectures",
   "Workshops",
   "Career talks",
   "Conference talks",

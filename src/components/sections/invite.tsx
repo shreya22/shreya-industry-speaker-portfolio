@@ -17,10 +17,9 @@ export function Invite() {
               Looking for an industry speaker?
             </h2>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
-              I&apos;m available for guest lectures, visiting lectures,
-              workshops, career talks, conference talks, engineering panels
-              and fireside chats &mdash; in person across London, and
-              remotely worldwide.
+              I&apos;m available for guest lectures, workshops, career talks,
+              conference talks, engineering panels and fireside chats. In
+              person across London, or remotely, wherever you are.
             </p>
 
             <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2">
@@ -80,9 +79,8 @@ export function Invite() {
             </div>
 
             <p className="mt-6 text-xs leading-relaxed text-muted-foreground">
-              Include your institution or event, the format you have in mind,
-              and a few possible dates &mdash; I typically reply within a few
-              days.
+              Include your institution or event, the format you have in mind
+              and a few possible dates. I usually reply within a few days.
             </p>
           </div>
         </div>
