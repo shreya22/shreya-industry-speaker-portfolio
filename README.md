@@ -70,3 +70,4 @@ public/
   images/            # Drop headshot.jpg, about.jpg, banner1.jpg here
   resume/            # Drop ShreyaResume.pdf here
 ```
+
